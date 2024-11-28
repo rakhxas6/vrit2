@@ -1,11 +1,10 @@
 body {
-    background: linear-gradient(to right, rgba(241, 234, 124, 0), rgb(240, 59, 150));
+background: #C04848;   
+    background: -webkit-linear-gradient(to right, #480048, #C04848); 
+    background: linear-gradient(to right, #480048, #C04848); 
 }
 
-.body {
-   
-    height: 100vh;
-}
+
 
 /* Swiper container */
 .swiper {
@@ -29,7 +28,7 @@ body {
 
 /* Active slide */
 .swiper-slide-active {
-    transform: scale(.9);
+    transform: scale(0.9);
     opacity: 1;
 }
 
@@ -37,11 +36,13 @@ body {
 .transparent-card {
     width: 300px;
     height: 300px;
-    background: rgba(212, 241, 45, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.1);
+    /* Subtle white with transparency */
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    /* Slightly darker shadow for depth */
+    backdrop-filter: blur(12px);
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -55,10 +56,8 @@ body {
     left: 0px;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.01);
-
+    background: rgba(0, 0, 0, 0.02);
 }
-
 
 /* Upper Blank Space */
 .card-header {
@@ -66,7 +65,8 @@ body {
     width: 90%;
     margin: 10px auto;
     border-radius: 30px;
-    background-color: rgba(0, 0, 0, 0.06);
+    background-color: rgba(255, 255, 255, 0.15);
+    /* Subtle light background */
 }
 
 /* Card Body */
@@ -80,7 +80,8 @@ body {
 .photo {
     width: 64px;
     height: 64px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 85, 150, 0.2);
+    /* Highlighted pinkish background */
     border-radius: 50%;
     overflow: hidden;
     flex-shrink: 0;
@@ -94,35 +95,37 @@ body {
 
 /* Name and Position */
 .info {
-    /* background-color: rgba(0, 0, 0, 0.1); */
     margin-left: 16px;
     width: 100%;
     margin-bottom: 0 !important;
 }
 
 .name {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Light color for contrast */
     width: 100%;
     font-size: 18px;
     border-radius: 15px;
     height: 30px;
     font-weight: bold;
     color: #333;
+    /* Darker text for contrast */
     margin: 0;
 }
 
 .position {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.15);
     width: 60%;
     border-radius: 15px;
     height: 15px;
     margin-top: 10px !important;
     font-size: 14px;
     color: #555;
+    /* Neutral gray for subtlety */
     margin: 4px 0 0;
 }
 
-
+/* Responsive Design */
 @media (max-width: 768px) {
     .swiper {
         height: 400px;
