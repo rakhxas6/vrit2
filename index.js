@@ -1,7 +1,7 @@
 const swiper = new Swiper(".swiper", {
   direction: "vertical", 
   loop: true, 
-  slidesPerView: 4.5, 
+  slidesPerView: 4, 
   spaceBetween: 50, 
   centeredSlides: true, 
   autoplay: {
@@ -22,7 +22,7 @@ const swiper = new Swiper(".swiper", {
       // Scale and highlight active slide
       const activeSlide = document.querySelector(".swiper-slide-active");
       activeSlide.style.transform = "scale(1)"; 
-      activeSlide.style.opacity = "1.5"; 
+      activeSlide.style.opacity = "1.3"; 
     },
   },
 });
